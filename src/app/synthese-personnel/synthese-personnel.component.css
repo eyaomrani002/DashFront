@@ -1,0 +1,124 @@
+input.colortext {
+    background-color: transparent !important;
+    color: #1e6bb8 !important;
+}
+
+
+.graphBox {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    min-height: 100px;
+   
+}
+
+.graphBox .box {
+    position: relative;
+    background: #f4f5f7;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 7px 5px rgba(252, 249, 249, 1) ;
+    border-radius: 0px;
+
+
+}
+
+@media (max-width :990px){
+    .graphBox{
+        grid-template-columns: 1fr ; 
+        height :auto;
+    }
+     
+}
+
+
+
+/* Ajoutez vos styles CSS existants ici */
+
+
+  
+
+
+.highcharts-title {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.highcharts-description {
+    padding: 0 20px;
+}
+
+
+/* Custom CSS to adjust modal styles */
+/* Style pour l'en-tête du modal */
+.modal-header {
+    padding: 1rem;
+    background-color: #aec6cf; /* Couleur pastel pour l'arrière-plan */
+  }
+  
+  /* Style pour le corps du modal */
+  .modal-body {
+    padding: 1rem;
+    font-size: 16px; /* Taille de police */
+  }
+  
+  /* Style pour le modal */
+  .modal-content {
+    border-radius: 10px;
+  }
+  
+  /* Style pour le titre du modal */
+  .modal-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Style pour le bouton de fermeture */
+  .close-btn {
+    font-size: 24px;
+    color: #565656; /* Couleur du texte */
+  }
+  
+  .close-btn:hover {
+    color: #7c7c7c; /* Couleur du texte au survol */
+  }
+  
+  /* Style pour le corps du modal */
+  .modal-body {
+    padding: 20px;
+  }
+  
+  /* Style pour le tableau */
+  .table-style {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-style th, .table-style td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Ligne de séparation entre les lignes */
+  }
+  
+  .table-style th {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Style pour le pied de page du modal */
+  .modal-footer {
+    padding: 20px;
+  }
+/* Style pour le bouton de fermeture */
+.close-btn {
+    font-size: 24px;
+    color: #52839d; /* Couleur du texte */
+    margin-left: auto; /* Déplace le bouton vers la droite */
+  }
+  
+  .close-btn:hover {
+    color: #7c7c7c; /* Couleur du texte au survol */
+  }
+    

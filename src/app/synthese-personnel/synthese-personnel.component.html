@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  
+    <div widget class="card">
+      <div class="card-header">
+        <span class="text-uppercase">{{ 'Informations Personnels' }}</span>
+        <div class="widget-controls">
+          <a data-widgster="expand" href="#" class="transition">
+            <i class="fa fa-chevron-down"></i>
+          </a>
+          <a data-widgster="collapse" href="#" class="transition">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+          <a data-widgster="fullscreen" href="#" class="transition">
+            <i class="fa fa-expand"></i>
+          </a>
+          <a data-widgster="restore" href="#" class="transition">
+            <i class="fa fa-compress"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-body widget-body" style="padding-top: 2px;">
+            <div class="panel-body" style="max-width: 500px;">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Année</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <angular2-multiselect name="dropdown" [data]="dropdownListAnnee" [(ngModel)]="selectedItemsAnnee"
+                        [settings]="dropdownSettings"
+                        (onSelect)="onItemSelectAnnee($event)"
+                        (onDeSelect)="onItemDeSelectAnnee($event)"
+                        (onSelectAll)="onSelectAllAnnee($event)"
+                        (onDeSelectAll)="onDeSelectAllAnnee($event)">
+        </angular2-multiselect>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="col-md-4">
+          <div class="card-body widget-body" style="padding-top: 2px;">
+            <div class="panel-body" style="max-width: 500px;">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Mois</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <angular2-multiselect name="dropdown" [data]="dropdownListMois" [(ngModel)]="selectedItemsMois"
+                        [settings]="dropdownSettings"
+                        (onSelect)="onItemSelectMois($event)"
+                        (onDeSelect)="onItemDeSelectMois($event)"
+                        (onSelectAll)="onSelectAllMois($event)"
+                        (onDeSelectAll)="onDeSelectAllMois($event)">
+            </angular2-multiselect>                  </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+         </div>
+        <div class="col-md-4">
+          <div class="card-body widget-body" style="padding-top: 2px;">
+            <div class="panel-body" style="max-width: 500px;">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Type Contrat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <angular2-multiselect name="dropdown" [data]="dropdownListTypeContrat" [(ngModel)]="selectedItemsTypeContrat"
+                        [settings]="dropdownSettings"
+                        (onSelect)="onItemSelectTypeContrat($event)"
+                        (onDeSelect)="onItemDeSelectTypeContrat($event)"
+                        (onSelectAll)="onSelectAllTypeContrat($event)"
+                        (onDeSelectAll)="onDeSelectAllTypeContrat($event)">
+  </angular2-multiselect>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-body widget-body" style="padding-top: 2px;">
+              <div class="panel-body" style="max-width: 500px;">
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Sexe</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <angular2-multiselect name="dropdown" [data]="dropdownListSexe" [(ngModel)]="selectedItemsSexe"
+                            [settings]="dropdownSettings"
+                            (onSelect)="onItemSelectSexe($event)"
+                            (onDeSelect)="onItemDeSelectSexe($event)"
+                            (onSelectAll)="onSelectAllSexe($event)"
+                            (onDeSelectAll)="onDeSelectAllSexe($event)">
+                     </angular2-multiselect>                    </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-body widget-body" style="padding-top: 2px;">
+              <div class="panel-body" style="max-width: 500px;">
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Tranche d'age</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <angular2-multiselect name="dropdown" [data]="dropdownListTrancheAge" [(ngModel)]="selectedItemsTrancheAge"
+                            [settings]="dropdownSettings"
+                            (onSelect)="onItemSelectTrancheAge($event)"
+                            (onDeSelect)="onItemDeSelectTrancheAge($event)"
+                            (onSelectAll)="onSelectAllTrancheAge($event)"
+                            (onDeSelectAll)="onDeSelectAllTrancheAge($event)">
+      </angular2-multiselect>                 </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-body widget-body" style="padding-top: 2px;">
+              <div class="panel-body" style="max-width: 500px;">
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Categorie</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <angular2-multiselect name="dropdown" [data]="dropdownListCategorie" [(ngModel)]="selectedItemsCategorie"
+                            [settings]="dropdownSettings"
+                            (onSelect)="onItemSelectCategorie($event)"
+                            (onDeSelect)="onItemDeSelectCategorie($event)"
+                            (onSelectAll)="onSelectAllCategorie($event)"
+                            (onDeSelectAll)="onDeSelectAllCategorie($event)">
+      </angular2-multiselect>                   </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div> 
+      </div>
+      <br>
+    
+              
+    </div>
+    <div class="margePageInter">
+        <div class="row">
+            <div class="col">
+                <div widget class="card">
+                    <div class="card-header">
+                        <span class="text-uppercase">{{ 'Tableau de Bord' }}</span>
+                        <div class="widget-controls">
+                            <a data-widgster="expand" href="#" class="transition">
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <a data-widgster="collapse" href="#" class="transition">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body widget-body" style="padding-top: 2px;">
+                        <!-- Chart Components -->
+                        <div class="graphBox">
+                            <div><canvas id="barChart" width="400" height="400"></canvas></div>
+                            <div><canvas id="barChart2" width="400" height="400"></canvas></div>
+                            <div><canvas id="modernPieChart"></canvas></div>
+                        </div>
+                    </div>
+                    <!-- Charting scripts -->
+                    <script type="text/javascript" src="/js/jsc/jscharting.js"></script>
+                    <script type="text/javascript" src="/js/jsc/modules/types.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="margePageInter" >
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="text-uppercase">{{ 'Informations Personnels' }}</span>
+                        <div class="widget-controls">
+                            <a data-widgster="expand" href="#" class="transition">
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <a data-widgster="collapse" href="#" class="transition">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body widget-body" style="padding-top: 2px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>{{ 'Matricule' }}</th>
+                                    <th>{{ 'Prénom & Nom' }}</th>
+                                    <th>{{ 'Sexe' }}</th>
+                                    <th>{{ 'Date de naissance'}}</th>
+                                    <th>{{ 'Âge' }}</th>
+                                    <th>{{ 'Date de recrutement' }}</th>
+                                    <th>{{ 'Date de départ' }}</th>
+                                    <th>{{ 'Carrière' }}</th>
+                                    <th>{{ 'Qualification' }}</th>
+                                    <th>{{ 'Fonction' }}</th>
+                                    <th>{{ 'Service' }}</th>
+                                    <th>{{ 'Salaire' }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Loop through employees data and display each employee's information -->
+                                <tr *ngFor="let employee of employees">
+                                    <td>{{ employee.matricule }}</td>
+                                    <td>{{ employee.prenomNom }}</td>
+                                    <td>{{ employee.sexe }}</td>
+                                    <td>{{ employee.dateNaissance }}</td>
+                                    <td>{{ calculateAge(employee.dateNaissance) }}</td>
+                                    <td>{{ employee.dateRecrutement }}</td>
+                                    <td>{{ employee.dateDepart }}</td>
+                                    <td>
+                                        {{ employee.carriere }}
+                                        <i class="fas fa-eye" (click)="showCareerDetails(employee)"></i>
+                                    </td>
+                                    <td>{{ employee.qualification }}</td>
+                                    <td>{{ employee.fonction }}</td>
+                                    <td>{{ employee.service }}</td>
+                                    <td>{{ employee.salaire }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" tabindex="-1" role="dialog" [ngClass]="{'d-block': selectedEmployee}">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Détails de Carrière</h5>
+                    <button type="button" class="close close-btn" aria-label="Close" (click)="hideCareerDetails()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <table class="table-style">
+                        <thead>
+                            <tr>
+                                <th style="padding-right: 20px;">Date de Recrutement</th>
+                                <th style="padding-right: 20px;">Date de Départ</th>
+                                <th style="padding-right: 20px;">Carrière</th>
+                                <th>Fonction</th>
+                            </tr>
+                        </thead>
+                        <tbody *ngIf="selectedEmployee">
+                            <tr>
+                                <td>{{ selectedEmployee?.dateRecrutement }}</td>
+                                <td>{{ selectedEmployee?.dateDepart }}</td>
+                                <td>{{ selectedEmployee?.carriere }}</td>
+                                <td>{{ selectedEmployee?.fonction }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <p>Somme de la Carrière: {{ calculateTotalCareer(selectedEmployee) }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
